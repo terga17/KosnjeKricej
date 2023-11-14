@@ -3,19 +3,13 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
+    border: 1px solid rgb(255, 230, 0);
 }
 
 body{
     height: 100vh;
     width: 100vw;
     background-image: url(images/mainbg.png);
-}
-
-
-
-.text-logo{
-    color: white;
-
 }
 
 /*MENU ICON ANIMATION*/
@@ -57,4 +51,26 @@ body{
     align-self: center;
 }
 
-/*MID SECTION*/
+/*MAIN BG SECTION*/
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
+
+.text-logo{
+    color: white;
+    font-size: 5rem;
+}
+
+/*TEXT SECTION*/
+
+.text-section{
+    margin-top: 5.5rem;
+}
+
+.section{
+    background-color: green;
+    color: white;
+}
