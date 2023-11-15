@@ -113,14 +113,34 @@ body{
 
 /*TEXT SECTION*/
 
-/* .text-section{
-    margin-top: 20vh;
-} */
+.text-section{
+    /* margin-top: 20vh; */
+}
 
 
 .section{
     background-color: green;
     color: white;
+    padding: 1rem;
+    text-align: justify;
+    border-top: 1px solid green;
+    border-top-right-radius: 2rem;
+    border-top-left-radius: 2rem;
+}
+
+.section h3{
+    text-align: center;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    background-color: rgb(1, 70, 1);
+    border-radius: 2rem;
+    margin-bottom: 0.4rem;
+}
+
+.section p{
+    border: 2px solid rgb(1, 70, 1);
+    border-radius: 1rem;
+    padding: 0.6rem;
 }
 
 .text-section img{
