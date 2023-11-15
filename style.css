@@ -1,3 +1,11 @@
+:root{
+    --dark-green: #102820;
+    --light-green: #4c6444;
+    --kaki: #caba9c;
+    --light-brown: #8a6240;
+    --dark-brown: #4d2d18;
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -38,7 +46,7 @@ body{
 .navbar{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    background-color: rgb(117, 117, 117);
+    background-color: var(--light-green);
     padding: 0.7rem;
     position: fixed;
     width: 100%;
@@ -70,10 +78,10 @@ body{
     width: 0;
     z-index: 1;
     position: fixed;                    /*DONT BREAK TEXT WHEN CLOSING*/
-    background-color: brown;
+    background-color: var(--light-green);
     overflow-x: hidden;
     transition: 0.5s;
-    top: 4.4rem;
+    top: 4.3rem;
 }
 
 .sidebar-list{
@@ -90,7 +98,7 @@ body{
 }
 
 .sidebar-item:hover{
-    background-color: #555;
+    background-color: var(--kaki);
 }
 
 .side-anchor{
@@ -113,22 +121,27 @@ body{
     justify-content: center;
     align-items: center;
     height: 100vh;
+    margin-bottom: 2rem;
 }
 
 .text-logo{
     color: white;
-    font-size: 5rem;
+    font-size: 6rem;
+    font-weight: 700;
+    font-family: 'Bruno Ace SC', sans-serif;
+    letter-spacing: 0.3rem;
+    -webkit-text-stroke: 1.5px var(--dark-green);
 }
 
 /*TEXT SECTION*/
 
 .section{
-    background-color: green;
+    background-color: var(--light-green);
     color: white;
     padding: 1.5rem;
     padding-right: 2rem;
     text-align: justify;
-    border-top: 1px solid green;
+    border-top: 1px solid var(--light-green);
     border-top-right-radius: 3rem;
     border-top-left-radius: 3rem;
     scroll-margin-top: 4rem;
@@ -139,13 +152,13 @@ body{
     text-align: center;
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
-    background-color: rgb(1, 70, 1);
+    background-color: var(--dark-green);
     border-radius: 2rem;
     margin-bottom: 0.4rem;
 }
 
 .section p{
-    border: 2px solid rgb(1, 70, 1);
+    border: 2px solid var(--dark-green);
     border-radius: 1rem;
     padding: 0.6rem;
 }
@@ -173,7 +186,7 @@ body{
 .footer-container{
     display: flex;
     flex-direction: column;
-    background-color: rgb(131, 131, 131);
+    background-color: var(--light-green);
     border-top-right-radius: 4rem;
     border-top-left-radius: 4rem;
     padding: 2rem;
@@ -182,7 +195,7 @@ body{
 .info-cards{
     display: flex;
     justify-content: center;
-    background-color: rgb(131, 131, 131);
+    background-color: var(--light-green);
     align-items: center;
     gap: 10rem;
     padding-left: 4rem;
@@ -227,3 +240,5 @@ body{
     height: 22vh;
     width: 20vw;
 }
+
+/*MEDIA QUERRIES FOR PHONE/SMALLER-SCREEN (<1030px)*/
