@@ -5,9 +5,6 @@ menuIcon.addEventListener("click", (e) => {
     e.preventDefault();
     menuIcon.classList.toggle("change");
     sidebar.style.width = sidebar.style.width === "400px" ? "0" : "400px";
-    
-    sidebar.style.width = sidebarWidth;
-    content.style.marginLeft = sidebarWidth;
 });
 
 const anchors = document.querySelectorAll(".side-anchor");
@@ -17,7 +14,6 @@ anchorsArr.forEach(anchor => {
     anchor.addEventListener("click", () => {
         menuIcon.classList.remove("change");
         sidebar.style.width = "0";
-        content.style.marginLeft = "0";
     });
 }); 
 
