@@ -4,7 +4,6 @@
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
     /* border: 1px solid rgb(255, 230, 0); */
-    scroll-behavior: smooth;
 }
 
 body{
@@ -88,6 +87,7 @@ body{
 .side-anchor{
     text-decoration: none;
     color: inherit;
+    /* pointer-events: none; */
 }
 
 @media screen and (max-width: 600px) {
@@ -112,11 +112,6 @@ body{
 }
 
 /*TEXT SECTION*/
-
-.text-section{
-    /* margin-top: 20vh; */
-}
-
 
 .section{
     background-color: green;
@@ -155,6 +150,7 @@ body{
     background-size: cover;
     overflow: hidden;
     /* background-attachment: fixed; */
+    pointer-events: none;
 }
 
 .parallax1{background-image: url(images/look-up-look-down-photography--o7ASOHDV9E-unsplash.jpg);}
