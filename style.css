@@ -160,3 +160,43 @@ body{
 .parallax1{background-image: url(images/look-up-look-down-photography--o7ASOHDV9E-unsplash.jpg);}
 .parallax3{background-image: url(images/kouji-tsuru-hkilGmT85ss-unsplash.jpg);}
 .parallax2{background-image: url(images/petar-tonchev-c-5-QE5kBYk-unsplash.jpg);}
+
+/*INFO-CARDS*/
+
+.info-cards{
+    margin-top: 5rem;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: rgb(131, 131, 131);
+    padding: 1.5rem;
+    border-radius: 4rem;
+    align-items: center;
+}
+
+.contact img{
+    height: 1rem;
+    width: 1rem;
+    margin-right: 0.5rem;
+} 
+
+.contact h3:hover{
+    color: white;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.form input, textarea, button{
+    border-radius: 0.5rem;
+    border: none;
+    height: 1.5rem;
+}
+
+.map iframe{
+    border-radius: 0.5rem;
+    height: 22vh;
+    width: 20vw;
+}
