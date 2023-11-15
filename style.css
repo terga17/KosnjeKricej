@@ -3,7 +3,8 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
-    border: 1px solid rgb(255, 230, 0);
+    /* border: 1px solid rgb(255, 230, 0); */
+    scroll-behavior: smooth;
 }
 
 body{
@@ -11,7 +12,7 @@ body{
     width: 100vw;
     background-image: url(images/mainbg.png);
     overflow-x: hidden;
-    background-attachment: fixed;
+    /* background-attachment: fixed; */
 }
 
 /*MENU ICON ANIMATION*/
@@ -40,6 +41,8 @@ body{
     grid-template-columns: 1fr 1fr;
     background-color: rgb(117, 117, 117);
     padding: 0.7rem;
+    position: fixed;
+    width: 100%;
 }
 
 .menu-icon {
@@ -53,12 +56,54 @@ body{
     align-self: center;
 }
 
+/*SIDEBAR*/
+.sidebar{
+    height: 100%;
+    width: 0;
+    z-index: 1;
+    position: fixed;
+    background-color: brown;
+    overflow-x: hidden;
+    transition: 0.5s;
+    top: 4.5rem;
+}
+
+.sidebar-list{
+    list-style-type: none;
+}
+
+.sidebar-item{
+    padding: 15px;
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidebar-item:hover{
+    background-color: #555;
+}
+
+.side-anchor{
+    text-decoration: none;
+    color: inherit;
+}
+
+@media screen and (max-width: 600px) {
+    .sidebar{
+        width: 100%;
+    }
+}
+
+
+
 /*MAIN BG SECTION*/
 .container{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 80vh;
+    height: 100vh;
 }
 
 .text-logo{
@@ -68,9 +113,9 @@ body{
 
 /*TEXT SECTION*/
 
-.text-section{
-    margin-top: 15vh;
-}
+/* .text-section{
+    margin-top: 20vh;
+} */
 
 
 .section{
@@ -85,10 +130,11 @@ body{
 
 .parallax1, .parallax2, .parallax3{
     min-height: 70vh;
-    background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    overflow: hidden;
+    /* background-attachment: fixed; */
 }
 
 .parallax1{background-image: url(images/look-up-look-down-photography--o7ASOHDV9E-unsplash.jpg);}
