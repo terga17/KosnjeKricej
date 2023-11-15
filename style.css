@@ -10,6 +10,8 @@ body{
     height: 100vh;
     width: 100vw;
     background-image: url(images/mainbg.png);
+    overflow-x: hidden;
+    background-attachment: fixed;
 }
 
 /*MENU ICON ANIMATION*/
@@ -70,7 +72,25 @@ body{
     margin-top: 15vh;
 }
 
+
 .section{
     background-color: green;
     color: white;
 }
+
+.text-section img{
+    height: 80vh;
+    width: 100vw;
+}
+
+.parallax1, .parallax2, .parallax3{
+    min-height: 70vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.parallax1{background-image: url(images/look-up-look-down-photography--o7ASOHDV9E-unsplash.jpg);}
+.parallax3{background-image: url(images/kouji-tsuru-hkilGmT85ss-unsplash.jpg);}
+.parallax2{background-image: url(images/petar-tonchev-c-5-QE5kBYk-unsplash.jpg);}
