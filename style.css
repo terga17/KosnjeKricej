@@ -354,19 +354,16 @@ input:focus, textarea:focus{
     width: 0.8rem;
   }
   
-  /* Track */
-  ::-webkit-scrollbar-track {
+::-webkit-scrollbar-track {
     background: var(--light-green);
   }
   
-  /* Handle */
-  ::-webkit-scrollbar-thumb {
+::-webkit-scrollbar-thumb {
     background: var(--dark-green);
     border-radius: 1rem;
   }
   
-  /* Handle on hover */
-  ::-webkit-scrollbar-thumb:hover {
+::-webkit-scrollbar-thumb:hover {
     background: var(--kaki);
   }
 

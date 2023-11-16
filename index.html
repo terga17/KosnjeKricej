@@ -76,10 +76,12 @@
 <div class="footer-container">
     <div class="info-cards">
         <div class="form-div">
-            <form class="form" action="#" method="">
-                <input placeholder="Email" type="email" name="mail" id="mail">
-                <textarea placeholder="Vase vprasanje" name="text-area" id="text-area" cols="30" rows="1"></textarea>
-                <button>Poslji</button>
+            <form class="form" action="https://formsubmit.co/neecor6@gmail.com" method="POST">
+                <input type="hidden" name="_subject" value="Novo vprasanje! - Kosnje Kricej">
+                <input placeholder="Email" type="email" name="Mail:" id="mail" required>
+                <textarea placeholder="Vase vprasanje" name="Vprasanje:" id="text-area" cols="30" rows="1" required></textarea>
+                <input type="hidden" name="_next" value="http://127.0.0.1:5500/thank.html">
+                <button type="submit">Poslji</button>
             </form>
         </div>
         <div class="contact" id="kontakt">
