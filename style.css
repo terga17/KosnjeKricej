@@ -209,24 +209,69 @@ body{
     padding-top: 1.5rem;
 }
 
-.contact img{
+.contact i{
     height: 1rem;               /*ADD ICONS FB, IG, PINTEREST - BETTER HOVER ANIMATION (LINE ANIMATION)*/
     width: 1rem;
-    margin-right: 0.5rem;
+    margin-right: 0.8rem;
 } 
 
 .contact h3:hover{
     color: white;
 }
 
+.contact h3{
+    position: relative;
+    color: white;
+    margin-bottom: 0.7rem;
+    padding-bottom: 0.3rem;
+    font-weight: 400;
+    letter-spacing: 0.1rem;
+}
+
+.contact h3::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: var(--kaki);
+    transform-origin: bottom left;
+    transition: transform 0.35s ease-out;
+}
+
+.contact h3:hover:after{
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.contact{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
 #toTop{
     text-align: center; /*ICON SCROLL TO TOP*/
+    font-size: 1.3rem;
+    margin-bottom: -2rem;
+}
+
+#toTop i:hover{
+    font-size: 1.4rem;
+    color: var(--kaki);
+    cursor: pointer;
+}
+
+#toTop a{
+    text-decoration: none;
+    color: white;
 }
 
 .form{                              /*STYLE THE FORM, LINE ANIMATION, HANDLE THE DATA UPLOAD*/
     display: flex;
     flex-direction: column;
-    gap: 1rem;
 }
 
 .form input, textarea, button{
