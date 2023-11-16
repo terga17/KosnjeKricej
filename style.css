@@ -353,3 +353,50 @@ input:focus, textarea:focus{
 
 
 /*MEDIA QUERRIES FOR PHONE/SMALLER-SCREEN (<1250px) -> remove map balance footer*/
+
+@media screen and (max-width: 1200px) {
+    .sidebar{
+        width: 50%;
+    }
+
+    .map{
+        display: none;
+    }
+
+    .info-cards{
+        padding: 1.5rem;
+    }
+    .container{
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 760px){
+    .info-cards{
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .contact{
+        gap: 0.1rem;
+    }
+
+    .container{
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 480px){
+    .container{
+        text-align: center;
+    }
+    .text-logo{
+        font-size: 4.5rem;
+        line-height: 6rem;
+    }
+
+    .sidebar{
+        width: 100%;
+    }
+}
