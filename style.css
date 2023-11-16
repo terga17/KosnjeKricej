@@ -205,8 +205,18 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 2rem;
+    gap: 3.5rem;
     padding-top: 1.5rem;
+}
+
+.bot-footer i{
+    font-size: 1.5rem;
+    color: white;
+}
+
+.bot-footer i:hover{
+    color: var(--kaki);
+    cursor: pointer;
 }
 
 .contact i{
@@ -252,8 +262,12 @@ body{
     gap: 1rem;
 }
 
+.mid-footer{
+    padding-bottom: 1.5rem;
+}
+
 #toTop{
-    text-align: center; /*ICON SCROLL TO TOP*/
+    text-align: center; 
     font-size: 1.3rem;
     margin-bottom: -2rem;
 }
@@ -285,5 +299,7 @@ body{
     height: 22vh;
     width: 20vw;
 }
+
+
 
 /*MEDIA QUERRIES FOR PHONE/SMALLER-SCREEN (<1030px)*/
