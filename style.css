@@ -128,9 +128,9 @@ body{
     color: white;
     font-size: 6rem;
     font-weight: 700;
-    font-family: 'Bruno Ace SC', sans-serif;
+    font-family: 'Josefin Sans', sans-serif;
     letter-spacing: 0.3rem;
-    -webkit-text-stroke: 1.5px var(--dark-green);
+    text-shadow: 4px 4px 4px var(--dark-green);
 }
 
 /*TEXT SECTION*/
@@ -144,7 +144,7 @@ body{
     border-top: 1px solid var(--light-green);
     border-top-right-radius: 3rem;
     border-top-left-radius: 3rem;
-    scroll-margin-top: 4rem;
+    scroll-margin-top: 7rem;
     margin-top: -2rem;
 }
 
@@ -190,6 +190,7 @@ body{
     border-top-right-radius: 4rem;
     border-top-left-radius: 4rem;
     padding: 2rem;
+    margin-top: -5rem;
 }
 
 .info-cards{
@@ -199,6 +200,8 @@ body{
     align-items: center;
     gap: 10rem;
     padding-left: 4rem;
+    border: 2px solid var(--dark-green);
+    border-radius: 1rem;
 }
 
 .bot-footer{
@@ -206,7 +209,7 @@ body{
     align-items: center;
     justify-content: center;
     gap: 3.5rem;
-    padding-top: 1.5rem;
+    padding-top: 2rem;
 }
 
 .bot-footer i{
@@ -270,6 +273,7 @@ body{
     text-align: center; 
     font-size: 1.3rem;
     margin-bottom: -2rem;
+    padding-top: 1rem;
 }
 
 #toTop i:hover{
@@ -339,11 +343,13 @@ input:focus, textarea:focus{
 
 
 .map iframe{
-    border-radius: 0.5rem;
     height: 22vh;
     width: 20vw;
+    padding: 1rem;
 }
 
 
 
-/*MEDIA QUERRIES FOR PHONE/SMALLER-SCREEN (<1030px)*/
+
+
+/*MEDIA QUERRIES FOR PHONE/SMALLER-SCREEN (<1250px) -> remove map balance footer*/
