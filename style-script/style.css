@@ -17,7 +17,7 @@
 body{
     height: 100vh;
     width: 100vw;
-    background-image: url(images/mainbg.png);
+    background-image: url(../images/mainbg.png);
     overflow-x: hidden;
     /* background-attachment: fixed; */
 }
@@ -160,8 +160,73 @@ body{
 .section p{
     border: 2px solid var(--dark-green);
     border-radius: 1rem;
+    padding: 0.8rem;
+}
+
+/*VPRASANJA*/
+
+.vprasanja-container{
+    border: 2px solid var(--dark-green);
+    border-radius: 1rem;
     padding: 0.6rem;
 }
+
+.vprasanja-list{
+    border-bottom: 2px solid white;
+    cursor: pointer;
+    padding: 0.3rem;
+    margin-bottom: 0.5rem;
+
+}
+.vprasanja-list p{
+    border: none;
+}
+.vprasanje{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.vprasanje p, .odgovor p{
+    text-align: left;
+}
+
+.vprasanje p{
+    font-weight: 900;
+    letter-spacing: 0.1rem;
+}
+
+.odgovor{
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 1.2s ease;
+}
+
+.vprasanja-list.active .odgovor{
+    max-height: 200px;
+    animation: fade 1s ease-in-out;
+}
+
+.vprasanja-list.active i{
+    transform: rotate(180deg);
+}
+
+.fa-chevron-down{
+    transition: transform .5s ease-in;
+}
+
+@keyframes fade{
+    from{
+        opacity: 0.7;
+        transform: translateY(-2px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+
 
 .text-section img{
     height: 80vh;
@@ -177,9 +242,9 @@ body{
     /* background-attachment: fixed; */
 }
 
-.parallax1{background-image: url(images/look-up-look-down-photography--o7ASOHDV9E-unsplash.jpg);}
-.parallax3{background-image: url(images/kouji-tsuru-hkilGmT85ss-unsplash.jpg);}
-.parallax2{background-image: url(images/petar-tonchev-c-5-QE5kBYk-unsplash.jpg);}
+.parallax1{background-image: url(../images/look-up-look-down-photography--o7ASOHDV9E-unsplash.jpg);}
+.parallax3{background-image: url(../images/kouji-tsuru-hkilGmT85ss-unsplash.jpg);}
+.parallax2{background-image: url(../images/petar-tonchev-c-5-QE5kBYk-unsplash.jpg);}
 
 /*INFO-CARDS | FOOTER*/
 

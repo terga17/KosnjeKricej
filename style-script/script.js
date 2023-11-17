@@ -17,3 +17,12 @@ anchorsArr.forEach(anchor => {
     });
 }); 
 
+const faqs = document.querySelectorAll(".vprasanja-list");
+const faqsArr = Array.from(faqs);
+
+faqsArr.forEach(faq => {
+    faq.addEventListener("click", () => {
+        faq.classList.toggle("active");
+    });
+});
+
