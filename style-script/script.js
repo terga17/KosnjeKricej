@@ -25,12 +25,3 @@ faqsArr.forEach(faq => {
         faq.classList.toggle("active");
     });
 });
-
-function checkSidebar(){
-    e.preventDefault;
-    if(sidebar.style.width > "0"){
-        sidebar.style.width = "0";
-    } else {
-
-    }
-};
