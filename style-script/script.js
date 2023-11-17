@@ -26,3 +26,11 @@ faqsArr.forEach(faq => {
     });
 });
 
+function checkSidebar(){
+    e.preventDefault;
+    if(sidebar.style.width > "0"){
+        sidebar.style.width = "0";
+    } else {
+
+    }
+};

@@ -107,13 +107,6 @@ body{
     display: block;
 }
 
-@media screen and (max-width: 600px) {
-    .sidebar{
-        width: 100%;
-    }
-}
-
-
 
 /*MAIN BG SECTION*/
 .container{
@@ -162,6 +155,36 @@ body{
     border-radius: 1rem;
     padding: 0.8rem;
 }
+
+/*STORTIVE*/
+
+/* .storitve-list{
+    list-style: none;
+    border-radius: 1rem;
+    padding: 0.8rem;
+    align-items: center;
+    grid-row: 2 / 3;
+    text-transform: uppercase;
+}
+
+.list-box{
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: 1fr 1fr;
+    border: 2px solid var(--dark-green);
+}
+
+.list-box p{
+    border: none;
+    grid-column: 1 / 8;
+    justify-self:center;
+    gap: 1fr; 
+}
+
+.storitve-list li{
+    text-align: left;
+    grid-column: 1 / 8;
+} */
 
 /*VPRASANJA*/
 
@@ -217,7 +240,7 @@ body{
 
 @keyframes fade{
     from{
-        opacity: 0.7;
+        opacity: 0.8;
         transform: translateY(-2px);
     }
     to{
@@ -226,6 +249,7 @@ body{
     }
 }
 
+/*IMAGES FOR BG*/
 
 
 .text-section img{
@@ -245,6 +269,7 @@ body{
 .parallax1{background-image: url(../images/look-up-look-down-photography--o7ASOHDV9E-unsplash.jpg);}
 .parallax3{background-image: url(../images/kouji-tsuru-hkilGmT85ss-unsplash.jpg);}
 .parallax2{background-image: url(../images/petar-tonchev-c-5-QE5kBYk-unsplash.jpg);}
+
 
 /*INFO-CARDS | FOOTER*/
 
@@ -294,7 +319,7 @@ body{
 } 
 
 .contact h3:hover{
-    color: white;
+    color: var(--kaki);
 }
 
 .contact h3{
@@ -304,6 +329,7 @@ body{
     padding-bottom: 0.3rem;
     font-weight: 400;
     letter-spacing: 0.1rem;
+    text-decoration: none;
 }
 
 .contact h3::after{
@@ -438,9 +464,6 @@ input:focus, textarea:focus{
 /*MEDIA QUERRIES FOR PHONE/SMALLER-SCREEN (<1250px) -> remove map balance footer*/
 
 @media screen and (max-width: 1200px) {
-    .sidebar{
-        width: 50%;
-    }
 
     .map{
         display: none;
@@ -479,7 +502,5 @@ input:focus, textarea:focus{
         line-height: 6rem;
     }
 
-    .sidebar{
-        width: 100%;
-    }
+
 }
