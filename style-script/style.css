@@ -17,7 +17,7 @@
 body{
     height: 100vh;
     width: 100vw;
-    background-image: url(../images/mainbg.png);
+    background-image: url(../images/mainbg.png);        /*NO REPEAT*/
     overflow-x: hidden;
     /* background-attachment: fixed; */
 }
@@ -504,3 +504,6 @@ input:focus, textarea:focus{
 
 
 }
+
+
+/*4K SCREEN SIZE FIX BUGS*/
