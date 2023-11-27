@@ -19,6 +19,7 @@ body{
     width: 100vw;
     background-image: url(../images/mainbg.png);
     overflow-x: hidden;
+    /* background-repeat: no-repeat; */
     /* background-attachment: fixed; */
 }
 
@@ -87,7 +88,7 @@ body{
     text-align: justify;
     border-top: 1px solid var(--light-green);
     border-radius: 3rem;
-    margin-top: 1rem;
+    margin-top: 5rem;
 }
 
 .navodila h3{
@@ -111,6 +112,10 @@ body{
     font-weight: bold;
 }
 
+.navodila p > a:hover{
+    text-decoration: underline;
+}
+
 .rac-box{
     height: 60vh;
     width: 80vw;
@@ -126,24 +131,52 @@ body{
 .outline-box{
     border: 2px solid var(--dark-green);
     border-radius: 1rem;
-    padding: 0.8rem;
+    padding: 0.5rem;
 }
 
 .izracun{
     border: 2px solid var(--dark-green);
     border-radius: 1rem;
-    padding: 0.8rem;
+    padding: 0.5rem;
+    margin-top: 0.6rem;
 }
 
-#kalk{
+.kalk{
     display: flex;
     align-items: center;
     justify-content: center;
+    gap: 0.2rem;
 }
 
-#kalk input{
+.kalk input{
     border: none;
+    background-color: var(--dark-green);
+    padding: 0.25rem;
+    border-radius: 0.5rem;
+    color: white;
+}
 
+.kalk input:focus{
+    outline: 2px solid var(--kaki);
+}
+
+.kalk button{
+    color: white;
+    background: transparent;
+    padding: 0.25rem;
+    border: 2px solid var(--dark-green);
+    border-radius: 0.5rem;
+}
+
+.kalk button:hover{
+    background-color: var(--dark-green);
+    border: 2px solid var(--kaki);
+    cursor: pointer;
+}
+
+::placeholder{
+    color: white;
+    opacity: 0.6;
 }
 
 .izracun p{
@@ -167,30 +200,96 @@ body{
 /*MEDIA QUERRIES FOR PHONE/SMALLER-SCREEN (<1250px) -> remove map balance footer*/
 
 @media screen and (max-width: 1200px) {
-    .container{
-        text-align: center;
+    .navodila{
+        text-align: left;
     }
 }
 
-@media screen and (max-width: 760px){
-    .container{
-        text-align: center;
+
+@media screen and (max-width: 480px){       /*POD 600PX ROTATE 90DEG SLIKO*/
+    .navodila{
+        display: flex;
+        width: 90%;
+        text-align: justify;
+        margin-top: 17rem;
+        background-color: var(--light-green);
+    }
+
+    .navodila p{
+        width: 100%;
+    }
+    
+    .rac-box{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .rac-box img{
+        rotate: 90deg;
+        object-fit: contain;
+        width: 120vw;
+        height: 100vh;
         padding: 1rem;
     }
-    .container div{
-        font-size: 4rem;
+
+    .kalk{
+        display: flex;
+        flex-direction: column;
+        gap: 0.3rem;
     }
-    .container p{
-        font-size: 1rem;
+    .container{
+        text-align: center;
+    }
+    .text-logo{
+        font-size: 4.5rem;
+        line-height: 6rem;
+    }
+    body{
+        background-size: 4000px;
+        background-repeat: no-repeat;
     }
 }
 
-@media screen and (max-width: 480px){
-    .container{
-        text-align: center;
+@media screen and (max-width: 400px){       /*POD 600PX ROTATE 90DEG SLIKO*/
+    .navodila{
+        display: flex;
+        width: 90%;
+        text-align: justify;
+        margin-top: 17rem;
+        background-color: var(--light-green);
+    }
+
+    .navodila p{
+        width: 100%;
+    }
+    
+    .rac-box{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .rac-box img{
+        rotate: 90deg;
+        object-fit: contain;
+        width: 120vw;
+        height: 100vh;
         padding: 1rem;
     }
-    .container div{
-        font-size: 2rem;
+
+    .kalk{
+        display: flex;
+        flex-direction: column;
+        gap: 0.3rem;
+    }
+    .container{
+        text-align: center;
+    }
+    .text-logo{
+        font-size: 4.5rem;
+        line-height: 6rem;
     }
 }
