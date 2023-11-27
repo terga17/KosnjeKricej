@@ -75,12 +75,13 @@ body{
 /*SIDEBAR*/
 .sidebar{
     height: 100%;
-    width: 0;
+    width: 400px;
+    left: -400px;
     z-index: 1;
-    position: fixed;                    /*DONT BREAK TEXT WHEN CLOSING*/
+    position: fixed;                    
     background-color: var(--light-green);
     overflow-x: hidden;
-    transition: 0.5s;
+    transition: 0.6s;
     top: 4.3rem;
 }
 
