@@ -13,7 +13,7 @@ const anchorsArr = Array.from(anchors);
 anchorsArr.forEach(anchor => {
     anchor.addEventListener("click", () => {
         menuIcon.classList.remove("change");
-        sidebar.style.width = "0";
+        sidebar.style.left = "-400px";
     });
 }); 
 
