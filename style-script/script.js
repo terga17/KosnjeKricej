@@ -25,3 +25,15 @@ faqsArr.forEach(faq => {
         faq.classList.toggle("active");
     });
 });
+
+function calculate() {
+    const numberInput = document.getElementById("number");
+    const number = parseFloat(numberInput.value);
+
+    if (!isNaN(number)) {
+      const result = (number * 0.06).toFixed(2) + "€";
+      document.getElementById("result").textContent = `Okvirna cena: ${result}`;
+    } else {
+      document.getElementById("result").textContent = "Vnesite stevilo.";
+    }
+  }

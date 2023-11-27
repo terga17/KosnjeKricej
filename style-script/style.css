@@ -168,35 +168,6 @@ body{
     padding: 0.8rem;
 }
 
-/*STORTIVE*/
-
-/* .storitve-list{
-    list-style: none;
-    border-radius: 1rem;
-    padding: 0.8rem;
-    align-items: center;
-    grid-row: 2 / 3;
-    text-transform: uppercase;
-}
-
-.list-box{
-    display: grid;
-    grid-template-columns: repeat(7, 1fr);
-    grid-template-rows: 1fr 1fr;
-    border: 2px solid var(--dark-green);
-}
-
-.list-box p{
-    border: none;
-    grid-column: 1 / 8;
-    justify-self:center;
-    gap: 1fr; 
-}
-
-.storitve-list li{
-    text-align: left;
-    grid-column: 1 / 8;
-} */
 
 /*VPRASANJA*/
 
