@@ -89,6 +89,7 @@ body{
     border-top: 1px solid var(--light-green);
     border-radius: 3rem;
     margin-top: 5rem;
+    justify-content: center;
 }
 
 .navodila h3{
@@ -213,6 +214,7 @@ body{
         text-align: justify;
         margin-top: 17rem;
         background-color: var(--light-green);
+        justify-content: center;
     }
 
     .navodila p{
@@ -259,6 +261,7 @@ body{
         text-align: justify;
         margin-top: 17rem;
         background-color: var(--light-green);
+        justify-content: center;
     }
 
     .navodila p{
