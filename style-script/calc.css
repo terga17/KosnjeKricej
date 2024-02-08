@@ -1,4 +1,4 @@
-:root{
+:root {
     --dark-green: #102820;
     --light-green: #4c6444;
     --kaki: #caba9c;
@@ -6,7 +6,7 @@
     --dark-brown: #4d2d18;
 }
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -14,19 +14,17 @@
     scroll-behavior: smooth;
 }
 
-body{
-    height: 100vh;
-    width: 100vw;
+body {
+    height: 100%;
+    width: 100%;
     background-image: url(../images/mainbg.png);
+    background-repeat: no-repeat;
+    background-size: cover; /* Adjusted */
     overflow-x: hidden;
-    /* background-repeat: no-repeat; */
-    /* background-attachment: fixed; */
 }
 
-
-
 /* NAVBAR */
-.navbar{
+.navbar {
     display: grid;
     grid-template-columns: 1fr 1fr;
     background-color: var(--light-green);
@@ -35,52 +33,45 @@ body{
     width: 100%;
 }
 
-.navbar i{
+.navbar i {
     color: white;
     font-size: 2rem;
     margin-left: 0.5rem;
 }
 
-.navbar a{
+.navbar a {
     align-self: center;
 }
 
-.navbar i:hover{
+.navbar i:hover {
     cursor: pointer;
     color: var(--dark-green);
 }
 
-
-.img-box{
+.img-box {
     justify-self: end;
     align-self: center;
-    width: auto;
     height: 3rem;
     margin-right: -1.5rem;
 }
 
-#logo{
+#logo {
     object-fit: cover;
     width: 150px;
     height: 60px;
 }
 
-
-
-
-/*MAIN BG SECTION*/
-.container{
+/* MAIN BG SECTION */
+.container {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    min-height: 100vh; /* Adjusted */
     margin-bottom: 2rem;
     flex-direction: column;
 }
 
-.navodila{
-    display: flex;
-    flex-direction: column;
+.navodila {
     background-color: var(--light-green);
     color: white;
     padding: 1.5rem;
@@ -92,7 +83,7 @@ body{
     justify-content: center;
 }
 
-.navodila h3{
+.navodila h3 {
     text-align: center;
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
@@ -101,55 +92,57 @@ body{
     margin-bottom: 0.4rem;
 }
 
-.navodila p{
+.navodila p {
     padding: 0.8rem;
     padding-bottom: 1rem;
-    width: 80vw;
+    max-width: 80%; /* Adjusted */
+    margin: 0 auto; /* Adjusted */
 }
 
-.navodila p > a{
+.navodila p > a {
     text-decoration: none;
     color: rgb(69, 181, 255);
     font-weight: bold;
 }
 
-.navodila p > a:hover{
+.navodila p > a:hover {
     text-decoration: underline;
 }
 
-.rac-box{
+.rac-box {
     height: 60vh;
     width: 80vw;
     border-radius: 1rem;
+    overflow: hidden; /* Adjusted */
 }
 
-.rac-box img{
-    height: 100%;
-    width: 100%;
-    object-fit: contain;
+.rac-box img {
+    width: 100%; /* Adjusted */
+    height: auto; /* Adjusted */
+    object-fit: cover; /* Adjusted */
 }
 
-.outline-box{
+.outline-box {
     border: 2px solid var(--dark-green);
     border-radius: 1rem;
     padding: 0.5rem;
 }
 
-.izracun{
+.izracun {
     border: 2px solid var(--dark-green);
     border-radius: 1rem;
     padding: 0.5rem;
     margin-top: 0.6rem;
 }
 
-.kalk{
+.kalk {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 0.2rem;
 }
 
-.kalk input{
+.kalk input {
     border: none;
     background-color: var(--dark-green);
     padding: 0.25rem;
@@ -157,11 +150,11 @@ body{
     color: white;
 }
 
-.kalk input:focus{
+.kalk input:focus {
     outline: 2px solid var(--kaki);
 }
 
-.kalk button{
+.kalk button {
     color: white;
     background: transparent;
     padding: 0.25rem;
@@ -169,23 +162,23 @@ body{
     border-radius: 0.5rem;
 }
 
-.kalk button:hover{
+.kalk button:hover {
     background-color: var(--dark-green);
     border: 2px solid var(--kaki);
     cursor: pointer;
 }
 
-::placeholder{
+::placeholder {
     color: white;
     opacity: 0.6;
 }
 
-.izracun p{
+.izracun p {
     display: flex;
     justify-content: center;
 }
 
-.text-logo{
+.text-logo {
     color: white;
     font-size: 6rem;
     font-weight: 700;
@@ -194,105 +187,57 @@ body{
     text-shadow: 4px 4px 4px var(--dark-green);
 }
 
-
-
-
-
-/*MEDIA QUERRIES FOR PHONE/SMALLER-SCREEN (<1250px) -> remove map balance footer*/
+/* MEDIA QUERIES FOR PHONE/SMALLER-SCREEN (<1250px) -> remove map balance footer */
 
 @media screen and (max-width: 1200px) {
-    .navodila{
+    .navodila {
         text-align: left;
     }
 }
 
-
-@media screen and (max-width: 480px){       /*POD 600PX ROTATE 90DEG SLIKO*/
-    .navodila{
-        display: flex;
+@media screen and (max-width: 480px) {
+    .navodila {
         width: 90%;
         text-align: justify;
-        margin-top: 17rem;
+        margin-top: 8rem;
         background-color: var(--light-green);
         justify-content: center;
     }
 
-    .navodila p{
+    .navodila p {
         width: 100%;
     }
-    
-    .rac-box{
+
+    .rac-box {
         display: flex;
-        align-items: center;
         justify-content: center;
-        width: 100%;
+        align-items: center;
+       width: auto;
+       object-fit: cover;
     }
 
-    .rac-box img{
-        rotate: 90deg;
-        object-fit: contain;
-        width: 120vw;
-        height: 100vh;
-        padding: 1rem;
+    .rac-box img {
+        width: 160%;
+        transform: rotate(90deg);
     }
 
-    .kalk{
+    .kalk {
         display: flex;
         flex-direction: column;
         gap: 0.3rem;
     }
-    .container{
+
+    .container {
         text-align: center;
     }
-    .text-logo{
+
+    .text-logo {
         font-size: 4.5rem;
         line-height: 6rem;
     }
-    body{
-        background-size: 4000px;
+
+    body {
+        background-size: cover;
         background-repeat: no-repeat;
-    }
-}
-
-@media screen and (max-width: 400px){       /*POD 600PX ROTATE 90DEG SLIKO*/
-    .navodila{
-        display: flex;
-        width: 90%;
-        text-align: justify;
-        margin-top: 17rem;
-        background-color: var(--light-green);
-        justify-content: center;
-    }
-
-    .navodila p{
-        width: 100%;
-    }
-    
-    .rac-box{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 100%;
-    }
-
-    .rac-box img{
-        rotate: 90deg;
-        object-fit: contain;
-        width: 120vw;
-        height: 100vh;
-        padding: 1rem;
-    }
-
-    .kalk{
-        display: flex;
-        flex-direction: column;
-        gap: 0.3rem;
-    }
-    .container{
-        text-align: center;
-    }
-    .text-logo{
-        font-size: 4.5rem;
-        line-height: 6rem;
     }
 }
