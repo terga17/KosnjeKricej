@@ -193,7 +193,15 @@ body {
     .navodila {
         text-align: left;
     }
+    .rac-box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+       width: auto;
+       object-fit: cover;
+    }
 }
+
 
 @media screen and (max-width: 480px) {
     .navodila {
