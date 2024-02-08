@@ -37,3 +37,8 @@ function calculate() {
       document.getElementById("result").textContent = "Vnesite stevilo.";
     }
   }
+
+  window.addEventListener('load', function() {
+    document.getElementById('loader').style.display = 'none';
+    document.querySelector('.shower').style.display = 'block';
+});
