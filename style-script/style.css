@@ -17,9 +17,12 @@
 body{
     height: 100vh;
     width: 100vw;
-    background-image: url(../images/mainbg.png);        /*NO REPEAT*/
+    background-image: url(../images/mainbg.png);        
     overflow-x: hidden;
-    /* background-attachment: fixed; */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-color:#4c6444;
 }
 
 /*MENU ICON ANIMATION*/
@@ -133,7 +136,7 @@ body{
     color: white;
     font-size: 6rem;
     font-weight: 700;
-    font-family: 'Josefin Sans', sans-serif;        /*to ok*/
+    font-family: 'Josefin Sans', sans-serif;       
     letter-spacing: 0.3rem;
     text-shadow: 4px 4px 4px var(--dark-green);
 }
@@ -492,6 +495,10 @@ input:focus, textarea:focus{
 }
 
 @media screen and (max-width: 480px){
+    body{
+        height: 140vh;
+        background-color:#4c6444;
+    }
     .container{
         text-align: center;
     }
@@ -499,8 +506,6 @@ input:focus, textarea:focus{
         font-size: 4.5rem;
         line-height: 6rem;
     }
-
-
 }
 
 
