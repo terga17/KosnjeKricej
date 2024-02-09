@@ -188,6 +188,7 @@ body {
     text-shadow: 4px 4px 4px var(--dark-green);
 }
 
+/* SCROLLBAR STYLES */
 ::-webkit-scrollbar {
     width: 0.8rem;
   }
