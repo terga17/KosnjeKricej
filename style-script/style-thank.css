@@ -99,6 +99,7 @@ body{
 
 
 
+
 /*MEDIA QUERRIES FOR PHONE/SMALLER-SCREEN (<1250px) -> remove map balance footer*/
 
 @media screen and (max-width: 1200px) {
