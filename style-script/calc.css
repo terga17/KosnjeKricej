@@ -24,6 +24,25 @@ body {
     background-color:#4c6444;
 }
 
+/* SCROLLBAR STYLES */
+::-webkit-scrollbar {
+    width: 0.8rem;
+  }
+  
+::-webkit-scrollbar-track {
+    background: var(--light-green);
+  }
+  
+::-webkit-scrollbar-thumb {
+    background: var(--dark-green);
+    border-radius: 1rem;
+  }
+  
+::-webkit-scrollbar-thumb:hover {
+    background: var(--kaki);
+  }
+
+
 /* NAVBAR */
 .navbar {
     display: grid;
@@ -187,24 +206,6 @@ body {
     letter-spacing: 0.3rem;
     text-shadow: 4px 4px 4px var(--dark-green);
 }
-
-/* SCROLLBAR STYLES */
-::-webkit-scrollbar {
-    width: 0.8rem;
-  }
-  
-::-webkit-scrollbar-track {
-    background: var(--light-green);
-  }
-  
-::-webkit-scrollbar-thumb {
-    background: var(--dark-green);
-    border-radius: 1rem;
-  }
-  
-::-webkit-scrollbar-thumb:hover {
-    background: var(--kaki);
-  }
 
 
 /* MEDIA QUERIES FOR PHONE/SMALLER-SCREEN (<1250px) -> remove map balance footer */
