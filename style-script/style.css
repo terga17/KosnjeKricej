@@ -64,7 +64,7 @@ body{
     color: white;
     left: 0;
     font-size: 1.3rem;
-    padding-right: 1rem;
+    margin-right: 1rem;
 }
 
 .home-number i {
@@ -519,6 +519,21 @@ input:focus, textarea:focus{
         font-size: 1.8rem;
     }
 
+    /* .home-number a{
+        display: none;
+    }
+
+    .home-number i{
+        color: white;
+        padding: 1rem;
+        border: 2px solid white;
+        border-radius: 2rem;
+        display: block;
+        position: fixed;
+        background-color: var(--dark-green);
+        bottom: 20px;
+        right: 20px;
+    } */
 }
 
 @media screen and (max-width: 480px){
@@ -532,22 +547,6 @@ input:focus, textarea:focus{
     .text-logo{
         font-size: 4.5rem;
         line-height: 6rem;
-    }
-    
-    .home-number a{
-        opacity: 0;
-    }
-
-    .home-number i{
-        padding: 1rem;
-        border: 3px solid var(--light-brown);
-        border-radius: 2rem;
-        color: var(--light-green);
-        display: block;
-        position: fixed;
-        background-color: white;
-        bottom: 20px;
-        right: 20px;
     }
 }
 
