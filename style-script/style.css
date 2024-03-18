@@ -47,13 +47,39 @@ body{
 
 /* NAVBAR */
 .navbar{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     background-color: var(--light-green);
     padding: 0.7rem;
     position: fixed;
     width: 100%;
 }
+
+.home-number{
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+    color: white;
+    left: 0;
+    font-size: 1.3rem;
+    padding-right: 1rem;
+}
+
+.home-number i {
+    margin-top: 2px;
+}
+
+.home-number a{
+    color: white;
+    text-decoration: none;
+    letter-spacing: 0.5px;
+}
+
+/* .callbtn{
+    display: none;
+} */
 
 .menu-icon {
     display: inline-block;
@@ -70,6 +96,7 @@ body{
 }
 
 #logo{
+    margin-right: -6rem;
     object-fit: cover;
     width: 150px;
     height: 60px;
@@ -506,7 +533,24 @@ input:focus, textarea:focus{
         font-size: 4.5rem;
         line-height: 6rem;
     }
+    
+    .home-number a{
+        opacity: 0;
+    }
+
+    .home-number i{
+        padding: 1rem;
+        border: 3px solid var(--light-brown);
+        border-radius: 2rem;
+        color: var(--light-green);
+        display: block;
+        position: fixed;
+        background-color: white;
+        bottom: 20px;
+        right: 20px;
+    }
 }
+
 
 
 /*4K SCREEN SIZE FIX BUGS*/
