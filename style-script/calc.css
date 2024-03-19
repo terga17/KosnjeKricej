@@ -54,30 +54,6 @@ body {
     width: 100%;
 }
 
-.home-number{
-    cursor: pointer;
-    display: flex;
-    flex-direction: row;
-    gap: 0.5rem;
-    color: white;
-    left: 0;
-    font-size: 1.3rem;
-    margin-right: 1rem;
-}
-
-.home-number i {
-    margin-top: 2px;
-}
-
-.home-number a{
-    color: white;
-    text-decoration: none;
-    letter-spacing: 0.5px;
-}
-
-.call-icon{
-    display: none;
-}
 
 .navbar i {
     color: white;
@@ -92,6 +68,32 @@ body {
 .navbar i:hover {
     cursor: pointer;
     color: var(--dark-green);
+}
+
+.home-number{
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+    color: white;
+    left: 0;
+    font-size: 1.3rem;
+    margin-right: 1rem;
+}
+
+.home-number i {
+    margin-top: 2px;
+    font-size: 1.3rem;
+    color: white;
+}
+.home-number i:hover {
+    color: white;
+}
+
+.home-number a{
+    color: white;
+    text-decoration: none;
+    letter-spacing: 0.5px;
 }
 
 .img-box {
