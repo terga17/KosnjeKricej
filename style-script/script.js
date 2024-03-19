@@ -8,8 +8,7 @@ document.addEventListener("DOMContentLoaded", function() {
     const faqs = document.querySelectorAll(".vprasanja-list");
     const faqsArr = Array.from(faqs);
 
-    var kontaktDiv = document.querySelector(".contact");
-    var homeNumberDiv = document.querySelector(".home-number");
+    var callIcon = document.querySelector(".call-icon");
 
     function isInViewport(element) {
         var rect = element.getBoundingClientRect();
@@ -22,9 +21,11 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 
     function handleVisibility() {
-        if (window.innerWidth <= 760 && isInViewport(kontaktDiv)) {
-            homeNumberDiv.style.display = "none";
-            window.removeEventListener("scroll", handleVisibility);
+        var contactDiv = document.querySelector(".contact");
+        if (window.innerWidth <= 760 && isInViewport(contactDiv)) {
+            callIcon.style.display = "none";
+        } else {
+            callIcon.style.display = "block";
         }
     }
 
@@ -56,10 +57,6 @@ faqsArr.forEach(faq => {
     });
 });
 
-//   window.addEventListener('load', function() {
-//     document.getElementById('loader').style.display = 'none';
-//     document.querySelector('.shower').style.display = 'block';
-// });
 });
 
 function calculate() {

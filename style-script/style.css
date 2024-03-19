@@ -77,9 +77,9 @@ body{
     letter-spacing: 0.5px;
 }
 
-/* .callbtn{
+.call-icon{
     display: none;
-} */
+}
 
 .menu-icon {
     display: inline-block;
@@ -519,13 +519,20 @@ input:focus, textarea:focus{
         font-size: 1.8rem;
     }
 
-    /* .home-number a{
+    .home-number{
         display: none;
     }
-
-    .home-number i{
+    .img-box{
+        align-items: flex-end;
+        justify-content: flex-end;
+        margin-right: 4rem;
+    }
+    .navbar{
+        justify-content: space-between;
+    }
+    .call-icon{
         color: white;
-        padding: 1rem;
+        padding: 1.2rem;
         border: 2px solid white;
         border-radius: 2rem;
         display: block;
@@ -533,7 +540,19 @@ input:focus, textarea:focus{
         background-color: var(--dark-green);
         bottom: 20px;
         right: 20px;
+        text-decoration: none;
+    }  
+    .call-icon a{
+        color: white;
+    }
+    /* #iconHover:hover{
+        color: rebeccapurple;
     } */
+    .call-icon:hover{
+        cursor: pointer;
+        border: 2px solid white;
+        background-color: rgb(103, 170, 39);
+    }
 }
 
 @media screen and (max-width: 480px){
