@@ -44,13 +44,39 @@ body {
 
 
 /* NAVBAR */
-.navbar {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     background-color: var(--light-green);
     padding: 0.7rem;
     position: fixed;
     width: 100%;
+}
+
+.home-number{
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+    color: white;
+    left: 0;
+    font-size: 1.3rem;
+    margin-right: 1rem;
+}
+
+.home-number i {
+    margin-top: 2px;
+}
+
+.home-number a{
+    color: white;
+    text-decoration: none;
+    letter-spacing: 0.5px;
+}
+
+.call-icon{
+    display: none;
 }
 
 .navbar i {
@@ -76,6 +102,7 @@ body {
 }
 
 #logo {
+    margin-right: -6rem;
     object-fit: cover;
     width: 150px;
     height: 60px;
@@ -223,6 +250,60 @@ body {
     }
 }
 
+@media screen and (max-width: 760px){
+    .info-cards{
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .contact{
+        gap: 0.1rem;
+    }
+
+    .container{
+        text-align: center;
+    }
+    .container p{
+        padding: 1rem;
+        font-size: 1.8rem;
+    }
+
+    .home-number{
+        display: none;
+    }
+    .img-box{
+        align-items: flex-end;
+        justify-content: flex-end;
+        margin-right: 4rem;
+    }
+    .navbar{
+        justify-content: space-between;
+    }
+    .call-icon{
+        color: white;
+        padding: 1.2rem;
+        border: 2px solid white;
+        border-radius: 2rem;
+        display: block;
+        position: fixed;
+        background-color: var(--dark-green);
+        bottom: 20px;
+        right: 20px;
+        text-decoration: none;
+    }  
+    .call-icon a{
+        color: white;
+    }
+    /* #iconHover:hover{
+        color: rebeccapurple;
+    } */
+    .call-icon:hover{
+        cursor: pointer;
+        border: 2px solid white;
+        background-color: rgb(103, 170, 39);
+    }
+}
 
 @media screen and (max-width: 480px) {
     .navodila {
